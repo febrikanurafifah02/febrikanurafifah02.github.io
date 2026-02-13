@@ -3,114 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perpustakaan Umum Febrika</title>
+<title>Febrika Library</title>
 
 <style>
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f4f6fb;
+font-family:Segoe UI, sans-serif;
+background:linear-gradient(120deg,#cfcfcf,#e8e8e8,#b5b5b5);
+color:#222;
 }
 
 /* NAVBAR */
 nav{
-background:#1f3c88;
-color:white;
+background:#9ea3a8;
 padding:15px;
 display:flex;
 justify-content:space-between;
+align-items:center;
 }
 nav a{
-color:white;
 text-decoration:none;
+color:white;
 margin:0 12px;
-font-weight:bold;
+font-weight:600;
 }
 
 /* HERO */
 .hero{
-background:linear-gradient(120deg,#1f3c88,#39a2db);
-color:white;
 text-align:center;
-padding:90px 20px;
+padding:80px 20px;
 }
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+.hero p{
+font-size:18px;
+color:#444;
+}
+
+/* BUTTON */
 .btn{
-background:white;
-color:#1f3c88;
+background:silver;
 padding:12px 22px;
 border-radius:8px;
 text-decoration:none;
+color:#222;
+font-weight:bold;
+display:inline-block;
+margin-top:15px;
+}
+
+/* SOCIAL */
+.social{
+margin-top:20px;
+}
+.social a{
+margin:0 10px;
+text-decoration:none;
+color:#333;
 font-weight:bold;
 }
 
-/* SEARCH */
-.search-box{
-text-align:center;
-margin:30px;
-}
-.search-box input{
-width:60%;
-padding:14px;
-border-radius:10px;
-border:1px solid #ccc;
-}
-
-/* SECTION */
-.section{
-padding:40px 20px;
-max-width:1100px;
-margin:auto;
-}
-.section h2{
-text-align:center;
-margin-bottom:25px;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:20px;
-}
-.card{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-text-align:center;
-}
-.card img{
+/* VIDEO */
+.video-section{
 width:100%;
-border-radius:6px;
+margin-top:50px;
 }
-
-/* CATEGORY */
-.category{
-background:#e3f2fd;
-padding:18px;
-border-radius:10px;
-font-weight:bold;
-text-align:center;
+.video-wrapper{
+position:relative;
+padding-bottom:56.25%;
+height:0;
 }
-
-/* STATS */
-.stats{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-}
-.stat{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-text-align:center;
+.video-wrapper iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:none;
 }
 
 /* FOOTER */
 footer{
-background:#1f3c88;
+background:#8f9499;
 color:white;
 text-align:center;
 padding:20px;
@@ -121,78 +97,43 @@ margin-top:40px;
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
-<div>📚 Perpustakaan Umum Febrika</div>
+<div><b>Febrika Library</b></div>
 <div>
 <a href="#">Home</a>
-<a href="#">Katalog</a>
 <a href="#">Layanan</a>
-<a href="#">Tentang</a>
-<a href="#">Kontak</a>
+<a href="#">Koleksi</a>
+<a href="#">Berita</a>
 </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-<h1>Selamat Datang di Perpustakaan Umum Febrika</h1>
-<p>Menyediakan koleksi bacaan dan informasi yang dapat diakses oleh masyarakat umum secara digital.</p>
-<br>
-<a class="btn" href="#">Lihat Katalog</a>
-</section>
+<h1>Welcome to Febrika Library</h1>
 
-<!-- SEARCH OPAC -->
-<div class="search-box">
-<input type="text" placeholder="🔎 Cari judul buku, penulis, atau subjek...">
-</div>
-
-<!-- BUKU TERBARU -->
-<section class="section">
-<h2>Koleksi Terbaru</h2>
-<div class="grid">
-<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 1</p></div>
-<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 2</p></div>
-<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 3</p></div>
-<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 4</p></div>
-<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 5</p></div>
-<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 6</p></div>
-</div>
-</section>
-
-<!-- KATEGORI -->
-<section class="section">
-<h2>Kategori Koleksi</h2>
-<div class="grid">
-<div class="category">📖 Novel</div>
-<div class="category">🎓 Pendidikan</div>
-<div class="category">💻 Teknologi</div>
-<div class="category">🏛️ Sejarah</div>
-</div>
-</section>
-
-<!-- TENTANG -->
-<section class="section" style="text-align:center;">
-<h2>Tentang Perpustakaan</h2>
 <p>
-Perpustakaan Umum Febrika merupakan perpustakaan digital yang dibangun
-sebagai sarana literasi terbuka bagi masyarakat. Website ini menyediakan
-informasi koleksi buku, rekomendasi bacaan, serta layanan informasi yang
-mudah diakses kapan saja.
+Selamat datang di perpustakaan digital modern yang menghadirkan
+koleksi pengetahuan, layanan informasi, dan inovasi literasi
+untuk masyarakat umum.
 </p>
+
+<a class="btn" href="cv.html">Lihat Curriculum Vitae</a>
+
+<div class="social">
+<a href="https://www.instagram.com/febrika_nurafifah/" target="_blank">Instagram</a>
+<a href="https://wa.me/6283194958062" target="_blank">WhatsApp</a>
+<a href="mailto:Febrikanurafifah736@gmail.com">Email</a>
+</div>
 </section>
 
-<!-- STATISTIK -->
-<section class="section">
-<h2>Statistik Koleksi</h2>
-<div class="stats">
-<div class="stat"><h3>250+</h3><p>Total Buku</p></div>
-<div class="stat"><h3>4</h3><p>Kategori</p></div>
-<div class="stat"><h3>Umum</h3><p>Akses Pengguna</p></div>
+<!-- VIDEO FULL WIDTH -->
+<section class="video-section">
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed?listType=user_uploads&list=febrikanurafifah3913"></iframe>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Perpustakaan Umum Febrika — Akses Literasi Untuk Semua</p>
+<p>© 2026 Febrika Library</p>
 </footer>
 
 </body>
