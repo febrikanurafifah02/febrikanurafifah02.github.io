@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perpustakaan Umum Febrika</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6fb;
+}
+
+/* NAVBAR */
+nav{
+background:#1f3c88;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(120deg,#1f3c88,#39a2db);
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+.btn{
+background:white;
+color:#1f3c88;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SEARCH */
+.search-box{
+text-align:center;
+margin:30px;
+}
+.search-box input{
+width:60%;
+padding:14px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+/* SECTION */
+.section{
+padding:40px 20px;
+max-width:1100px;
+margin:auto;
+}
+.section h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:20px;
+}
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+.card img{
+width:100%;
+border-radius:6px;
+}
+
+/* CATEGORY */
+.category{
+background:#e3f2fd;
+padding:18px;
+border-radius:10px;
+font-weight:bold;
+text-align:center;
+}
+
+/* STATS */
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+.stat{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#1f3c88;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div>📚 Perpustakaan Umum Febrika</div>
+<div>
+<a href="#">Home</a>
+<a href="#">Katalog</a>
+<a href="#">Layanan</a>
+<a href="#">Tentang</a>
+<a href="#">Kontak</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Selamat Datang di Perpustakaan Umum Febrika</h1>
+<p>Menyediakan koleksi bacaan dan informasi yang dapat diakses oleh masyarakat umum secara digital.</p>
+<br>
+<a class="btn" href="#">Lihat Katalog</a>
+</section>
+
+<!-- SEARCH OPAC -->
+<div class="search-box">
+<input type="text" placeholder="🔎 Cari judul buku, penulis, atau subjek...">
+</div>
+
+<!-- BUKU TERBARU -->
+<section class="section">
+<h2>Koleksi Terbaru</h2>
+<div class="grid">
+<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 1</p></div>
+<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 2</p></div>
+<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 3</p></div>
+<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 4</p></div>
+<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 5</p></div>
+<div class="card"><img src="https://via.placeholder.com/150x220"><p>Buku 6</p></div>
+</div>
+</section>
+
+<!-- KATEGORI -->
+<section class="section">
+<h2>Kategori Koleksi</h2>
+<div class="grid">
+<div class="category">📖 Novel</div>
+<div class="category">🎓 Pendidikan</div>
+<div class="category">💻 Teknologi</div>
+<div class="category">🏛️ Sejarah</div>
+</div>
+</section>
+
+<!-- TENTANG -->
+<section class="section" style="text-align:center;">
+<h2>Tentang Perpustakaan</h2>
+<p>
+Perpustakaan Umum Febrika merupakan perpustakaan digital yang dibangun
+sebagai sarana literasi terbuka bagi masyarakat. Website ini menyediakan
+informasi koleksi buku, rekomendasi bacaan, serta layanan informasi yang
+mudah diakses kapan saja.
+</p>
+</section>
+
+<!-- STATISTIK -->
+<section class="section">
+<h2>Statistik Koleksi</h2>
+<div class="stats">
+<div class="stat"><h3>250+</h3><p>Total Buku</p></div>
+<div class="stat"><h3>4</h3><p>Kategori</p></div>
+<div class="stat"><h3>Umum</h3><p>Akses Pengguna</p></div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Perpustakaan Umum Febrika — Akses Literasi Untuk Semua</p>
+</footer>
+
+</body>
+</html>
