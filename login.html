@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Anggota</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: silver;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        .success {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Daftar Anggota</h2>
+
+    <form onsubmit="return showMessage()">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="No Handphone" required>
+
+        <button type="submit">daftar</button>
+
+        <div id="message" class="success"></div>
+    </form>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerHTML = "Daftar";
+        return false; // supaya tidak refresh halaman
+    }
+</script>
+
+</body>
+</html>
