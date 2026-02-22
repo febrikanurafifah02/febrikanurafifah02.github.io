@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Febrika Library</title>
 
+<head>
 <style>
 body{
 margin:0;
@@ -12,14 +13,47 @@ font-family:Segoe UI, sans-serif;
 background:linear-gradient(120deg,#c9c9c9,#e6e6e6,#bfbfbf);
 color:#222;
 }
-  <header style="display:flex; justify-content:space-between; align-items:center; padding:15px 30px;">
-    <h2>Homepage</h2>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
 
-    <!-- Tombol Login di kanan -->
-    <a href="login.html" style="text-decoration:none; font-weight:bold; color:#333;">
-        🔐 Login
-    </a>
+.navbar nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #222;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: gray;
+}
+
+.login {
+    font-weight: bold;
+}
+
+</style>
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div>Febrika Library</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Layanan</a>
+        <a href="#">Koleksi</a>
+        <a href="#">Berita</a>
+        <a href="login.html">🔐 Login</a>
+    </nav>
 </header>
+
+</body>
 
 /* NAVBAR */
 nav{
@@ -107,15 +141,17 @@ margin-top:40px;
 
 <body>
 
-<nav>
-<div><b>Febrika Library</b></div>
-<div>
-<a href="#">Home</a>
-<a href="#">Layanan</a>
-<a href="#">Koleksi</a>
-<a href="#">Berita</a>
-</div>
-</nav>
+<header class="navbar">
+   <div class="logo">Febrika Library</div>
+
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Layanan</a>
+      <a href="#">Koleksi</a>
+      <a href="#">Berita</a>
+      <a href="login.html" class="login">🔐 Login</a>
+   </nav>
+</header>
 
 <section class="hero">
 <h1>Welcome to Febrika Library</h1>
