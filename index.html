@@ -1,156 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Febrika Library</title>
-
-  <style>
-
-    body{
-      margin:0;
-      font-family: Segoe UI, sans-serif;
-      background: linear-gradient(120deg,#c9c9c9,#e6e6e6,#bfbfbf);
-      color:#222;
-    }
-
-    /* NAVBAR */
-    header.navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      background: #9fa4a9;
-    }
-
-    header.navbar nav a {
-      text-decoration:none;
-      margin-left: 20px;
-      color: white;
-      font-weight:500;
-    }
-
-    header.navbar nav a:hover {
-      color: #ddd;
-    }
-
-  </style>
-
+    <meta charset="UTF-8">
+    <title>Febrika Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-/* HERO */
-.hero{
-text-align:center;
-padding:90px 20px;
-}
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-.hero p{
-font-size:18px;
-color:#444;
-max-width:600px;
-margin:auto;
-}
+    <script src="js/script.js"></script>
+<script>
+    checkLogin();
+</script>
 
-/* BUTTON */
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 24px;
-background:silver;
-border-radius:8px;
-text-decoration:none;
-color:#222;
-font-weight:bold;
-}
-
-/* SOCIAL LINK */
-.social{
-margin-top:25px;
-}
-.social a{
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
-color:#333;
-}
-
-/* VIDEO FULL WIDTH */
-.video-section{
-width:100%;
-margin-top:60px;
-}
-.video-wrapper{
-position:relative;
-padding-bottom:56.25%;
-height:0;
-}
-.video-wrapper iframe{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-border:none;
-}
-
-/* FOOTER */
-footer{
-background:#8f9499;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-</style>
-</head>
-
-<body>
-
-<header class="navbar">
-    <div>Febrika Library</div>
-  
+<!-- NAVBAR -->
+<header>
+    <div class="logo">Febrika Library</div>
     <nav>
         <a href="index.html">Home</a>
+        <a href="cv.html">Profil</a>
         <a href="#">Layanan</a>
         <a href="#">Koleksi</a>
         <a href="#">Berita</a>
-        <a href="login.html">🔐 Login</a>
+        <a href="#" onclick="logout()" class="login-btn">Logout</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
 </header>
-  
+
+<!-- HERO -->
 <section class="hero">
-<h1>Welcome to Febrika Library</h1>
-
-<p>
-Perpustakaan digital modern dengan nuansa elegan yang menghadirkan
-layanan informasi, koleksi pengetahuan, dan inovasi literasi untuk masyarakat umum.
-</p>
-
-<a class="btn" href="cv.html">Curriculum Vitae</a>
-
-<div class="social">
-<a href="https://www.instagram.com/febrika_nurafifah/" target="_blank">Instagram</a>
-<a href="https://wa.me/6283194958062" target="_blank">WhatsApp</a>
-<a href="mailto:Febrikanurafifah736@gmail.com">Email</a>
-</div>
+    <h1>Selamat Datang <br> di Febrika Library</h1>
+    <p>Perpustakaan digital modern dengan nuansa elegan yang menghadirkan layanan informasi, koleksi pengetahuan, dan inovasi literasi untuk masyarakat umum.</p>
+    <a href="cv.html" class="btn">Lihat Curriculum Vitae</a>
 </section>
 
-<!-- VIDEO -->
-<section class="video-section">
-<div class="video-wrapper">
-<iframe 
-src="https://www.youtube.com/embed/E8XXRaTrbCw"
-title="Video Febrika Library"
-allowfullscreen>
-</iframe>
-</div>
-</section>
-
-<footer>
-<p>© 2026 Febrika Library</p>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Febrika Nur Afifah | Febrika Library</p>
 </footer>
 
 </body>
