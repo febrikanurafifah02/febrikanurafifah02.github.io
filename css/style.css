@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(135deg, #DCDCDC, #C0C0C0, #A9A9A9);
+  background: linear-gradient(135deg, #1ABC9C, #48C9B0, #85C1E9);
     color: white;
     line-height: 1.6;
 }
@@ -42,12 +42,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700;
+    color: #1ABC9C;
 }
 
 /* LOGIN BUTTON */
 .login-btn {
-    background: #2ecc71;
+    background: #85C1E9;
     padding: 8px 18px;
     border-radius: 30px;
     font-weight: 600;
@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 .login-btn:hover {
-    background: #27ae60;
+    background: #85C1E9;
     color: white;
 }
 
@@ -85,7 +85,7 @@ nav a:hover {
 .btn {
     display: inline-block;
     background: #DCDCDC;
-    color: #BFC1C2;
+    color: #1ABC9C;
     padding: 14px 30px;
     border-radius: 40px;
     text-decoration: none;
