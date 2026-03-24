@@ -4,39 +4,74 @@
     <meta charset="UTF-8">
     <title>Pustaka Komunitas Warga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
-<script>
-    checkLogin();
-</script>
 
 <!-- NAVBAR -->
 <header>
-    <div class="logo">Pustaka Komunitas Warga</div>
+    <div class="logo">📚 Pustaka Komunitas</div>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="#">Home</a>
         <a href="cv.html">Profil</a>
-        <a href="#">Layanan</a>
-        <a href="#">Koleksi</a>
-        <a href="#">Berita</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#koleksi">Koleksi</a>
+        <a href="#berita">Berita</a>
+        <a href="contact.html">Contact</a>
         <a href="#" onclick="logout()" class="login-btn">Logout</a>
-        <a href="contact.html">Contact Us</a>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Selamat Datang <br> di Pustaka Komunitas Warga</h1>
-    <p>Selamat datang di Pustaka Komunitas Warga, sebuah perpustakaan digital yang hadir sebagai pusat literasi, informasi, dan interaksi masyarakat dalam satu wadah yang terintegrasi</p>
-    <a href="cv.html" class="btn">Lihat Curriculum Vitae</a>
+    <div class="hero-content">
+        <h1>Selamat Datang di <br> Pustaka Komunitas Warga</h1>
+        <p>
+            Pusat literasi digital yang menyediakan informasi, koleksi, dan layanan 
+            untuk masyarakat dalam satu platform yang mudah diakses.
+        </p>
+        <a href="cv.html" class="btn">Lihat Profil Saya</a>
+    </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+    <h2>Layanan</h2>
+    <div class="card-container">
+        <div class="card">📖 Peminjaman Buku</div>
+        <div class="card">💻 Akses Digital</div>
+        <div class="card">📚 Literasi Informasi</div>
+    </div>
+</section>
+
+<!-- KOLEKSI -->
+<section id="koleksi">
+    <h2>Koleksi</h2>
+    <div class="card-container">
+        <div class="card">Buku Umum</div>
+        <div class="card">Jurnal</div>
+        <div class="card">E-book</div>
+    </div>
+</section>
+
+<!-- BERITA -->
+<section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Belum ada berita terbaru.</p>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
     <p>© 2026 Febrika Nur Afifah | Pustaka Komunitas Warga</p>
 </footer>
+
+<!-- SCRIPT DI BAWAH (lebih rapi) -->
+<script src="js/script.js"></script>
+<script>
+    checkLogin();
+</script>
 
 </body>
 </html>
