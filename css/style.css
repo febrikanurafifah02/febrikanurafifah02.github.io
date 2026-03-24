@@ -346,3 +346,12 @@ section h2 {
     font-size: 32px;
     margin-bottom: 40px;
 }
+/* ================= WARNA SECTION ================= */
+
+#layanan {
+    background: rgba(0,0,0,0.1);
+}
+
+#koleksi {
+    background: rgba(255,255,255,0.05);
+}
