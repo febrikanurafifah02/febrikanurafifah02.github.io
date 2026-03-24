@@ -335,3 +335,14 @@ footer h4 {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+/* ================= SECTION TITLE ================= */
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
