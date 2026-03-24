@@ -338,11 +338,11 @@ footer h4 {
 /* ================= SECTION TITLE ================= */
 
 section {
-    text-align: center;
+    text-align: center !important;
 }
 
 section h2 {
-    text-align: center;
+    text-align: center !important;
     font-size: 32px;
     margin-bottom: 40px;
 }
