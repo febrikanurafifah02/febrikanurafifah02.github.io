@@ -118,22 +118,19 @@ nav a:hover::after {
     margin-top: 10px;
     line-height: 1.6;
 }
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 28px;
-    background: white;
-    color: #1ABC9C;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+.btn{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:#1abc9c;
+color:white;
+border-radius:20px;
+transition:0.3s;
 }
 
-.btn:hover {
-     transform: scale(1.05);
+.btn:hover{
+background:#16a085;
 }
-
 /* ================= CV SECTION ================= */
 .cv {
     padding: 70px 20px;
