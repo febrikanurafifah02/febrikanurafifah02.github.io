@@ -95,10 +95,10 @@ nav a:hover::after {
     z-index: 2;
     animation: fadeUp 1s ease;
 }
-@keyframes fadeUp {
+@keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
@@ -113,6 +113,8 @@ nav a:hover::after {
     letter-spacing: 1px;
     line-height: 1.3;
     text-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+     animation: slideUp 1s ease forwards, float 3s ease-in-out infinite;
 }
 .hero p {
     margin-top: 10px;
