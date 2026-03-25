@@ -32,9 +32,9 @@ header {
     backdrop-filter: blur(10px);
 }
 .logo {
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 nav a {
