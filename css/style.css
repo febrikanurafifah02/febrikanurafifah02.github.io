@@ -83,7 +83,7 @@ nav a:hover::after {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66') no-repeat center/cover;
+   background: url('interior library.jpg') no-repeat center center/cover;
 }
 .hero::before {
     content: "";
