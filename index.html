@@ -13,17 +13,57 @@
 <!-- NAVBAR -->
 <header>
    <div class="logo">📚PusKomWarga</div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="cv.html">Profil</a>
-        <a href="#layanan">Layanan</a>
-        <a href="#koleksi">Koleksi</a>
-        <a href="#event">Event</a>
-        <a href="#berita">Berita</a>
-        <a href="contact.html">Contact</a>
-        <a href="#" onclick="logout()" class="login-btn">Logout</a>
-    </nav>
+   <nav>
+    <a href="#">Home</a>
+
+    <div class="dropdown">
+        <a href="about.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="about.html">Tentang Kami</a>
+            <a href="about.html#visi">Visi</a>
+            <a href="about.html#misi">Misi</a>
+        </div>
+    </div>
+
+    <a href="cv.html">Profil</a>
+
+    <div class="dropdown">
+        <a href="#layanan" class="dropbtn">Layanan</a>
+        <div class="dropdown-content">
+            <a href="#layanan">Peminjaman Buku</a>
+            <a href="#layanan">Akses Digital</a>
+            <a href="#layanan">Literasi Informasi</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#koleksi" class="dropbtn">Koleksi</a>
+        <div class="dropdown-content">
+            <a href="#koleksi">Buku Umum</a>
+            <a href="#koleksi">Jurnal</a>
+            <a href="#koleksi">E-book</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#event" class="dropbtn">Event</a>
+        <div class="dropdown-content">
+            <a href="#event">Event Terbaru</a>
+            <a href="event.html">Selengkapnya</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#berita" class="dropbtn">Berita</a>
+        <div class="dropdown-content">
+            <a href="#berita">Berita Terbaru</a>
+            <a href="#berita">Pengumuman</a>
+        </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+    <a href="#" onclick="logout()" class="login-btn">Logout</a>
+</nav>
 </header>
 
 <section class="hero-modern">
