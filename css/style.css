@@ -214,15 +214,17 @@ footer {
     max-width: 1200px;
     margin: 0 auto 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align: left;
 }
 
 .footer-box {
-    flex: 1 1 250px;
-    min-width: 220px;
+    flex: 1;
+    min-width: 0;
+    text-align: left;
 }
 
 .footer-box h3 {
@@ -263,11 +265,21 @@ footer hr {
     }
 
     .hero-modern h1 {
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
 
     .video-container iframe {
         height: 250px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-box {
+        min-width: 100%;
+        text-align: center;
     }
 }
 
